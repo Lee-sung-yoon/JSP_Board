@@ -21,11 +21,9 @@ public class GugudanServlet extends HttpServlet {
 
         // request 정보를 담는다.
         // 왜냐하면 나중에 gugudan2.jsp에서 해당 내용을 꺼내 쓰기 위해서이다.
-//        rq.setAttr("dan", dan);
-//        rq.setAttr("limit", limit);
+        rq.setAttr("dan", dan);
+        rq.setAttr("limit", limit);
 
-        req.setAttribute("dan", dan);
-        req.setAttribute("limit", limit);
 
         // gugudan2.jsp 에게 나머지 작업을 토스
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/gugudan2.jsp");

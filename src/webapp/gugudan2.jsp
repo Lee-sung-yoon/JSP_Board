@@ -5,8 +5,8 @@
 
 <%
     Rq rq = new Rq(request, response);
-    int dan = (int)request.getAttribute("dan");
-    int limit = (int)request.getAttribute("limit");
+    int dan = (int)rq.getAttr("dan");
+    int limit = (int)rq.getAttr("limit");
 %>
 
 
