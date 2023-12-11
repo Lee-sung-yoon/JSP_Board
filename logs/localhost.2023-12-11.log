@@ -1824,3 +1824,3577 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:37:53.351 SEVERE [http-nio-8081-exec-2] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+63: <!--<% } %>-->
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [68] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [71] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [72] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [73] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [74] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [75] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+78: <!--    <% } %>-->
+
+
+JSP 파일 [/article/list.jsp]의 [81] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+78: <!--    <% } %>-->
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [83] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [86] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [87] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [88] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [89] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [90] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+93: <!--    <% } %>-->
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:37:53.351 SEVERE [http-nio-8081-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+63: <!--<% } %>-->
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [68] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [71] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [72] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [73] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [74] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [75] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+78: <!--    <% } %>-->
+
+
+JSP 파일 [/article/list.jsp]의 [81] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+78: <!--    <% } %>-->
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [83] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [86] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [87] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [88] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [89] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [90] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+93: <!--    <% } %>-->
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+63: <!--<% } %>-->
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [68] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [71] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [72] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [73] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [74] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [75] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+78: <!--    <% } %>-->
+
+
+JSP 파일 [/article/list.jsp]의 [81] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+78: <!--    <% } %>-->
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [83] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [86] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [87] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [88] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [89] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [90] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+93: <!--    <% } %>-->
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:38:33.014 SEVERE [http-nio-8081-exec-3] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+63: <!--<% } %>-->
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [68] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [71] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [72] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [73] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [74] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [75] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+78: <!--    <% } %>-->
+
+
+JSP 파일 [/article/list.jsp]의 [81] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+78: <!--    <% } %>-->
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [83] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [86] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [87] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [88] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [89] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [90] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+93: <!--    <% } %>-->
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:38:33.014 SEVERE [http-nio-8081-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+63: <!--<% } %>-->
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [68] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [71] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [72] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [73] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [74] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [75] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+78: <!--    <% } %>-->
+
+
+JSP 파일 [/article/list.jsp]의 [81] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+78: <!--    <% } %>-->
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [83] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [86] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [87] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [88] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [89] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [90] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+93: <!--    <% } %>-->
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+63: <!--<% } %>-->
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [68] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [71] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [72] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [73] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [74] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [75] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+78: <!--    <% } %>-->
+
+
+JSP 파일 [/article/list.jsp]의 [81] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+78: <!--    <% } %>-->
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [83] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [86] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [87] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [88] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [89] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [90] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+93: <!--    <% } %>-->
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:38:44.786 SEVERE [http-nio-8081-exec-1] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+63: <!--<% } %>-->
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [68] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [71] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [72] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [73] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [74] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [75] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+78: <!--    <% } %>-->
+
+
+JSP 파일 [/article/list.jsp]의 [81] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+78: <!--    <% } %>-->
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [83] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [86] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [87] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [88] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [89] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [90] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+93: <!--    <% } %>-->
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:38:44.786 SEVERE [http-nio-8081-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+63: <!--<% } %>-->
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [68] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [71] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [72] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [73] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [74] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [75] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+78: <!--    <% } %>-->
+
+
+JSP 파일 [/article/list.jsp]의 [81] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+78: <!--    <% } %>-->
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [83] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [86] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [87] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [88] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [89] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [90] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+93: <!--    <% } %>-->
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+63: <!--<% } %>-->
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [68] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [71] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [72] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [73] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [74] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [75] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+78: <!--    <% } %>-->
+
+
+JSP 파일 [/article/list.jsp]의 [81] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+78: <!--    <% } %>-->
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [83] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [86] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [87] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [88] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [89] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [90] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+93: <!--    <% } %>-->
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:38:44.787 SEVERE [http-nio-8081-exec-4] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.article.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:38:44.787 SEVERE [http-nio-8081-exec-2] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.article.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:38:44.787 SEVERE [http-nio-8081-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.article.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.article.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:38:44.787 SEVERE [http-nio-8081-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.article.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.article.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:38:44.787 SEVERE [http-nio-8081-exec-3] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.article.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:38:44.787 SEVERE [http-nio-8081-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.article.list_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.article.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:39:20.111 SEVERE [http-nio-8081-exec-6] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+63: <!--<% } %>-->
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [68] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [71] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [72] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [73] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [74] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [75] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+78: <!--    <% } %>-->
+
+
+JSP 파일 [/article/list.jsp]의 [81] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+78: <!--    <% } %>-->
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [83] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [86] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [87] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [88] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [89] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [90] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+93: <!--    <% } %>-->
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:39:20.111 SEVERE [http-nio-8081-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+63: <!--<% } %>-->
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [68] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [71] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [72] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [73] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [74] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [75] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+78: <!--    <% } %>-->
+
+
+JSP 파일 [/article/list.jsp]의 [81] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+78: <!--    <% } %>-->
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [83] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [86] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [87] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [88] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [89] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [90] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+93: <!--    <% } %>-->
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+63: <!--<% } %>-->
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [67] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+64: 
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [68] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+65: <!--    <h1>게시물 리스트 v3</h1>-->
+66: <!--    <% for(int i = 0; i < 3; i++) {-->
+67: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [71] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+68: <!--    %>-->
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [72] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+69: <!--    <ul>-->
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [73] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+70: <!--        <li>-->
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [74] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+71: <!--            <%= articleRow.get("id")%>-->
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [75] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+72: <!--            <%= articleRow.get("regDate")%>-->
+73: <!--            <%= articleRow.get("updateDate")%>-->
+74: <!--            <%= articleRow.get("title")%>-->
+75: <!--            <%= articleRow.get("content")%>-->
+76: <!--        </li>-->
+77: <!--    </ul>-->
+78: <!--    <% } %>-->
+
+
+JSP 파일 [/article/list.jsp]의 [81] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+78: <!--    <% } %>-->
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "Map", :: expected after this token
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+The target type of this expression must be a functional interface
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on token "=", ; expected
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [82] 행에서 오류가 발생했습니다.
+Syntax error on tokens, delete these tokens
+79: 
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [83] 행에서 오류가 발생했습니다.
+The operator ! is undefined for the argument type(s) void
+80: <!--    <h1>게시물 리스트 v4</h1>-->
+81: <!--    <% for(int i = 0; i < articleListMap.size(); i++) {-->
+82: <!--    Map<String, Object> articleRow = articleListMap.get(i);-->
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [86] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+83: <!--    %>-->
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [87] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+84: <!--    <ul>-->
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+
+
+JSP 파일 [/article/list.jsp]의 [88] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+85: <!--        <li>-->
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+
+
+JSP 파일 [/article/list.jsp]의 [89] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+86: <!--            <%= articleRow.get("id")%>-->
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+
+
+JSP 파일 [/article/list.jsp]의 [90] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+87: <!--            <%= articleRow.get("regDate")%>-->
+88: <!--            <%= articleRow.get("updateDate")%>-->
+89: <!--            <%= articleRow.get("title")%>-->
+90: <!--            <%= articleRow.get("content")%>-->
+91: <!--        </li>-->
+92: <!--    </ul>-->
+93: <!--    <% } %>-->
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)

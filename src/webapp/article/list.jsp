@@ -23,87 +23,46 @@
         body, ul, li {
             margin: 0;
         }
+        .section {
+            display: flex;
+            justify-content: center;
+        }
     </style>
-    <h1>게시물 리스트 v1</h1>
-    <ul>
-        <li>
-            <%= articleListMap.get(0).get("id")%>
-            <%= articleListMap.get(0).get("regDate")%>
-            <%= articleListMap.get(0).get("updateDate")%>
-            <%= articleListMap.get(0).get("title")%>
-            <%= articleListMap.get(0).get("content")%>
-        </li>
-        <li>
-            <%= articleListMap.get(1).get("id")%>
-            <%= articleListMap.get(1).get("regDate")%>
-            <%= articleListMap.get(1).get("updateDate")%>
-            <%= articleListMap.get(1).get("title")%>
-            <%= articleListMap.get(1).get("content")%>
-        </li>
-        <li>
-            <%= articleListMap.get(2).get("id")%>
-            <%= articleListMap.get(2).get("regDate")%>
-            <%= articleListMap.get(2).get("updateDate")%>
-            <%= articleListMap.get(2).get("title")%>
-            <%= articleListMap.get(2).get("content")%>
-        </li>
-    </ul>
 
-    <h1>게시물 리스트 v2</h1>
-    <% for(int i = 0; i < 3; i++) {%>
-    <ul>
-        <li>
-            <%= articleListMap.get(i).get("id")%>
-            <%= articleListMap.get(i).get("regDate")%>
-            <%= articleListMap.get(i).get("updateDate")%>
-            <%= articleListMap.get(i).get("title")%>
-            <%= articleListMap.get(i).get("content")%>
-        </li>
-    </ul>
-<% } %>
+    <section class="section">
+        <div class="con">
+            <h1>게시물 리스트</h1>
 
-    <h1>게시물 리스트 v3</h1>
-    <% for(int i = 0; i < 3; i++) {
-    Map<String, Object> articleRow = articleListMap.get(i);
-    %>
-    <ul>
-        <li>
-            <%= articleRow.get("id")%>
-            <%= articleRow.get("regDate")%>
-            <%= articleRow.get("updateDate")%>
-            <%= articleRow.get("title")%>
-            <%= articleRow.get("content")%>
-        </li>
-    </ul>
-    <% } %>
-
-    <h1>게시물 리스트 v4</h1>
-    <% for(int i = 0; i < articleListMap.size(); i++) {
-    Map<String, Object> articleRow = articleListMap.get(i);
-    %>
-    <ul>
-        <li>
-            <%= articleRow.get("id")%>
-            <%= articleRow.get("regDate")%>
-            <%= articleRow.get("updateDate")%>
-            <%= articleRow.get("title")%>
-            <%= articleRow.get("content")%>
-        </li>
-    </ul>
-    <% } %>
-
-    <h1>게시물 리스트 v5</h1>
-    <% for(Map<String, Object> articleRow : articleListMap) {
-    %>
-    <ul>
-        <li>
-            <%= articleRow.get("id")%>
-            <%= articleRow.get("regDate")%>
-            <%= articleRow.get("updateDate")%>
-            <%= articleRow.get("title")%>
-            <%= articleRow.get("content")%>
-        </li>
-    </ul>
-    <% } %>
+            <table border="1" style="border-collapse: collapse; text-align: center;">
+                <colgroup>
+                    <col width="50">
+                    <col width="200">
+                    <col width="200">
+                    <col width="200">
+                    <col width="200">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>작성날짜</th>
+                    <th>수정날짜</th>
+                    <th>제목</th>
+                    <th>내용</th>
+                </tr>
+                </thead>
+                <tbody>
+                <% for(Map<String, Object> articleRow : articleListMap) {%>
+                <tr>
+                    <td><%= articleRow.get("id")%></td>
+                    <td><%= articleRow.get("regDate")%></td>
+                    <td><%= articleRow.get("updateDate")%></td>
+                    <td><%= articleRow.get("title")%></td>
+                    <td><%= articleRow.get("content")%></td>
+                </tr>
+                <% } %>
+                </tbody>
+            </table>
+        </div>
+    </section>
 </body>
 </html>
