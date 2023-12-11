@@ -251,4 +251,5 @@ public class MysqlUtil {
     public static int delete(SecSql sql) {
         return update(sql);
     }
+
 }
