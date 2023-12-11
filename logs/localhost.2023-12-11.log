@@ -662,3 +662,1165 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 17:55:03.887 SEVERE [http-nio-8081-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로가 []인 컨텍스트의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.ClassCastException: class java.util.HashMap cannot be cast to class java.util.List (java.util.HashMap and java.util.List are in module java.base of loader 'bootstrap')
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:31)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 17:56:19.539 SEVERE [http-nio-8081-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로가 []인 컨텍스트의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.ClassCastException: class java.util.HashMap cannot be cast to class java.util.List (java.util.HashMap and java.util.List are in module java.base of loader 'bootstrap')
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:31)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 17:56:19.980 SEVERE [http-nio-8081-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로가 []인 컨텍스트의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.ClassCastException: class java.util.HashMap cannot be cast to class java.util.List (java.util.HashMap and java.util.List are in module java.base of loader 'bootstrap')
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:31)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 17:56:45.268 SEVERE [http-nio-8081-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로가 []인 컨텍스트의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.ClassCastException: class java.util.HashMap cannot be cast to class java.util.List (java.util.HashMap and java.util.List are in module java.base of loader 'bootstrap')
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:31)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:04:21.377 SEVERE [http-nio-8081-exec-1] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [7] 행에서 오류가 발생했습니다.
+List cannot be resolved to a type
+4: 
+5: <%
+6:     Rq rq = new Rq(request, response);
+7:     List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
+8: 
+9: %>
+10: <!doctype html>
+
+
+JSP 파일 [/article/list.jsp]의 [7] 행에서 오류가 발생했습니다.
+Map cannot be resolved to a type
+4: 
+5: <%
+6:     Rq rq = new Rq(request, response);
+7:     List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
+8: 
+9: %>
+10: <!doctype html>
+
+
+JSP 파일 [/article/list.jsp]의 [7] 행에서 오류가 발생했습니다.
+List cannot be resolved to a type
+4: 
+5: <%
+6:     Rq rq = new Rq(request, response);
+7:     List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
+8: 
+9: %>
+10: <!doctype html>
+
+
+JSP 파일 [/article/list.jsp]의 [7] 행에서 오류가 발생했습니다.
+Map cannot be resolved to a type
+4: 
+5: <%
+6:     Rq rq = new Rq(request, response);
+7:     List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
+8: 
+9: %>
+10: <!doctype html>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:04:21.377 SEVERE [http-nio-8081-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [7] 행에서 오류가 발생했습니다.
+List cannot be resolved to a type
+4: 
+5: <%
+6:     Rq rq = new Rq(request, response);
+7:     List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
+8: 
+9: %>
+10: <!doctype html>
+
+
+JSP 파일 [/article/list.jsp]의 [7] 행에서 오류가 발생했습니다.
+Map cannot be resolved to a type
+4: 
+5: <%
+6:     Rq rq = new Rq(request, response);
+7:     List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
+8: 
+9: %>
+10: <!doctype html>
+
+
+JSP 파일 [/article/list.jsp]의 [7] 행에서 오류가 발생했습니다.
+List cannot be resolved to a type
+4: 
+5: <%
+6:     Rq rq = new Rq(request, response);
+7:     List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
+8: 
+9: %>
+10: <!doctype html>
+
+
+JSP 파일 [/article/list.jsp]의 [7] 행에서 오류가 발생했습니다.
+Map cannot be resolved to a type
+4: 
+5: <%
+6:     Rq rq = new Rq(request, response);
+7:     List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
+8: 
+9: %>
+10: <!doctype html>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [7] 행에서 오류가 발생했습니다.
+List cannot be resolved to a type
+4: 
+5: <%
+6:     Rq rq = new Rq(request, response);
+7:     List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
+8: 
+9: %>
+10: <!doctype html>
+
+
+JSP 파일 [/article/list.jsp]의 [7] 행에서 오류가 발생했습니다.
+Map cannot be resolved to a type
+4: 
+5: <%
+6:     Rq rq = new Rq(request, response);
+7:     List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
+8: 
+9: %>
+10: <!doctype html>
+
+
+JSP 파일 [/article/list.jsp]의 [7] 행에서 오류가 발생했습니다.
+List cannot be resolved to a type
+4: 
+5: <%
+6:     Rq rq = new Rq(request, response);
+7:     List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
+8: 
+9: %>
+10: <!doctype html>
+
+
+JSP 파일 [/article/list.jsp]의 [7] 행에서 오류가 발생했습니다.
+Map cannot be resolved to a type
+4: 
+5: <%
+6:     Rq rq = new Rq(request, response);
+7:     List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
+8: 
+9: %>
+10: <!doctype html>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:13:50.303 SEVERE [http-nio-8081-exec-2] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+55:     %>
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+
+
+JSP 파일 [/article/list.jsp]의 [59] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+
+
+JSP 파일 [/article/list.jsp]의 [60] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+
+
+JSP 파일 [/article/list.jsp]의 [61] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+64:     </ul>
+
+
+JSP 파일 [/article/list.jsp]의 [62] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+64:     </ul>
+65: <% } %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:13:50.303 SEVERE [http-nio-8081-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+55:     %>
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+
+
+JSP 파일 [/article/list.jsp]의 [59] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+
+
+JSP 파일 [/article/list.jsp]의 [60] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+
+
+JSP 파일 [/article/list.jsp]의 [61] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+64:     </ul>
+
+
+JSP 파일 [/article/list.jsp]의 [62] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+64:     </ul>
+65: <% } %>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+55:     %>
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+
+
+JSP 파일 [/article/list.jsp]의 [59] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+
+
+JSP 파일 [/article/list.jsp]의 [60] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+
+
+JSP 파일 [/article/list.jsp]의 [61] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+64:     </ul>
+
+
+JSP 파일 [/article/list.jsp]의 [62] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+64:     </ul>
+65: <% } %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:14:27.599 SEVERE [http-nio-8081-exec-1] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+55:     %>
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+
+
+JSP 파일 [/article/list.jsp]의 [59] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+
+
+JSP 파일 [/article/list.jsp]의 [60] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+
+
+JSP 파일 [/article/list.jsp]의 [61] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+64:     </ul>
+
+
+JSP 파일 [/article/list.jsp]의 [62] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+64:     </ul>
+65: <% } %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:14:27.599 SEVERE [http-nio-8081-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+55:     %>
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+
+
+JSP 파일 [/article/list.jsp]의 [59] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+
+
+JSP 파일 [/article/list.jsp]의 [60] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+
+
+JSP 파일 [/article/list.jsp]의 [61] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+64:     </ul>
+
+
+JSP 파일 [/article/list.jsp]의 [62] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+64:     </ul>
+65: <% } %>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+55:     %>
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+
+
+JSP 파일 [/article/list.jsp]의 [59] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+
+
+JSP 파일 [/article/list.jsp]의 [60] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+
+
+JSP 파일 [/article/list.jsp]의 [61] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+64:     </ul>
+
+
+JSP 파일 [/article/list.jsp]의 [62] 행에서 오류가 발생했습니다.
+articleRow cannot be resolved
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+62:             <%= articleRow.get("content")%>
+63:         </li>
+64:     </ul>
+65: <% } %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:16:05.093 SEVERE [http-nio-8081-exec-6] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [56] 행에서 오류가 발생했습니다.
+ul cannot be resolved to a type
+53:     <% for(int i = 0; i < 3; i++) {
+54:         Map<String, Object> articleRow = articleListMap.get(i);
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+
+
+JSP 파일 [/article/list.jsp]의 [56] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+53:     <% for(int i = 0; i < 3; i++) {
+54:         Map<String, Object> articleRow = articleListMap.get(i);
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+
+
+JSP 파일 [/article/list.jsp]의 [56] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+53:     <% for(int i = 0; i < 3; i++) {
+54:         Map<String, Object> articleRow = articleListMap.get(i);
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+
+
+JSP 파일 [/article/list.jsp]의 [57] 행에서 오류가 발생했습니다.
+Syntax error on tokens, Expression expected instead
+54:         Map<String, Object> articleRow = articleListMap.get(i);
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+
+
+JSP 파일 [/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+
+
+코드 생성된 자바 파일 [C:\Users\user\Desktop\youtube 강의\jsp_projects\JSP_Board\work\Catalina\localhost\ROOT\org\apache\jsp\article\list_jsp.java]의 [235] 행에서 오류가 발생했습니다.
+Syntax error, insert "}" to complete Block
+
+코드 생성된 자바 파일 [C:\Users\user\Desktop\youtube 강의\jsp_projects\JSP_Board\work\Catalina\localhost\ROOT\org\apache\jsp\article\list_jsp.java]의 [252] 행에서 오류가 발생했습니다.
+Syntax error on token "}", delete this token
+
+코드 생성된 자바 파일 [C:\Users\user\Desktop\youtube 강의\jsp_projects\JSP_Board\work\Catalina\localhost\ROOT\org\apache\jsp\article\list_jsp.java]의 [253] 행에서 오류가 발생했습니다.
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+11-Dec-2023 18:16:05.093 SEVERE [http-nio-8081-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [sbs.jsp.board.servlet.UsrArticleListServlet]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [56] 행에서 오류가 발생했습니다.
+ul cannot be resolved to a type
+53:     <% for(int i = 0; i < 3; i++) {
+54:         Map<String, Object> articleRow = articleListMap.get(i);
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+
+
+JSP 파일 [/article/list.jsp]의 [56] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+53:     <% for(int i = 0; i < 3; i++) {
+54:         Map<String, Object> articleRow = articleListMap.get(i);
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+
+
+JSP 파일 [/article/list.jsp]의 [56] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+53:     <% for(int i = 0; i < 3; i++) {
+54:         Map<String, Object> articleRow = articleListMap.get(i);
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+
+
+JSP 파일 [/article/list.jsp]의 [57] 행에서 오류가 발생했습니다.
+Syntax error on tokens, Expression expected instead
+54:         Map<String, Object> articleRow = articleListMap.get(i);
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+
+
+JSP 파일 [/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+
+
+코드 생성된 자바 파일 [C:\Users\user\Desktop\youtube 강의\jsp_projects\JSP_Board\work\Catalina\localhost\ROOT\org\apache\jsp\article\list_jsp.java]의 [235] 행에서 오류가 발생했습니다.
+Syntax error, insert "}" to complete Block
+
+코드 생성된 자바 파일 [C:\Users\user\Desktop\youtube 강의\jsp_projects\JSP_Board\work\Catalina\localhost\ROOT\org\apache\jsp\article\list_jsp.java]의 [252] 행에서 오류가 발생했습니다.
+Syntax error on token "}", delete this token
+
+코드 생성된 자바 파일 [C:\Users\user\Desktop\youtube 강의\jsp_projects\JSP_Board\work\Catalina\localhost\ROOT\org\apache\jsp\article\list_jsp.java]의 [253] 행에서 오류가 발생했습니다.
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/article/list.jsp]의 [56] 행에서 오류가 발생했습니다.
+ul cannot be resolved to a type
+53:     <% for(int i = 0; i < 3; i++) {
+54:         Map<String, Object> articleRow = articleListMap.get(i);
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+
+
+JSP 파일 [/article/list.jsp]의 [56] 행에서 오류가 발생했습니다.
+Syntax error, insert "super ( ) ;" to complete Statement
+53:     <% for(int i = 0; i < 3; i++) {
+54:         Map<String, Object> articleRow = articleListMap.get(i);
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+
+
+JSP 파일 [/article/list.jsp]의 [56] 행에서 오류가 발생했습니다.
+Constructor call must be the first statement in a constructor
+53:     <% for(int i = 0; i < 3; i++) {
+54:         Map<String, Object> articleRow = articleListMap.get(i);
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+
+
+JSP 파일 [/article/list.jsp]의 [57] 행에서 오류가 발생했습니다.
+Syntax error on tokens, Expression expected instead
+54:         Map<String, Object> articleRow = articleListMap.get(i);
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+
+
+JSP 파일 [/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+55: 
+56:     <ul>
+57:         <li>
+58:             <%= articleRow.get("id")%>
+59:             <%= articleRow.get("regDate")%>
+60:             <%= articleRow.get("updateDate")%>
+61:             <%= articleRow.get("title")%>
+
+
+코드 생성된 자바 파일 [C:\Users\user\Desktop\youtube 강의\jsp_projects\JSP_Board\work\Catalina\localhost\ROOT\org\apache\jsp\article\list_jsp.java]의 [235] 행에서 오류가 발생했습니다.
+Syntax error, insert "}" to complete Block
+
+코드 생성된 자바 파일 [C:\Users\user\Desktop\youtube 강의\jsp_projects\JSP_Board\work\Catalina\localhost\ROOT\org\apache\jsp\article\list_jsp.java]의 [252] 행에서 오류가 발생했습니다.
+Syntax error on token "}", delete this token
+
+코드 생성된 자바 파일 [C:\Users\user\Desktop\youtube 강의\jsp_projects\JSP_Board\work\Catalina\localhost\ROOT\org\apache\jsp\article\list_jsp.java]의 [253] 행에서 오류가 발생했습니다.
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.servlet.UsrArticleListServlet.doGet(UsrArticleListServlet.java:36)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
