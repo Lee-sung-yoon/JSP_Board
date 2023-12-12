@@ -61,6 +61,8 @@
             </table>
             <div class="btn-gruop">
                 <a href="list">리스트로 이동</a>
+                &nbsp;
+                <a href="doDelete?id=<%= articleRow.get("id")%>">게시물 삭제</a>
             </div>
         </div>
     </section>
