@@ -26,11 +26,23 @@ public class UsrArticleDetailServlet extends HttpServlet {
         int id = rq.getIntParam("id", 0);
 
         if (id == 0) {
-            resp.getWriter().append("<script>alert('잘못된 요청입니다.'); history.back(); </script>");
+            rq.appendBody("<script>alert('잘못된 요청입니다.'); history.back(); </script>");
             return;
         }
 
         SecSql sql = new SecSql();
+        sql.append("SELECT COUNT(*)");
+        sql.append("FROM article AS A");
+        sql.append("WHERE A.id = ?", id);
+
+        boolean articleIsExists = MysqlUtil.selectRowBooleanValue(sql);
+
+        if (articleIsExists == false) {
+            rq.appendBody("<script>alert('해당 게시물은 없는 게시물입니다.'); history.back(); </script>");
+            return;
+        }
+
+        sql = new SecSql();
         sql.append("SELECT A.*");
         sql.append("FROM article AS A");
         sql.append("WHERE A.id = ?", id);
