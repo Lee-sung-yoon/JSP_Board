@@ -21,7 +21,7 @@ Rq rq = new Rq(request, response);
         body, ul, li {
             margin: 0;
         }
-    </style>
+</style>
 
 <script>
     function JoinForm_submit(form) {
@@ -81,11 +81,11 @@ Rq rq = new Rq(request, response);
     <div class="con">
         <h1>회원가입</h1>
         <form action="doJoin" method="POST" onsubmit="JoinForm_submit(this); return false;">
-            <div>로그인 아이디 : <input autocomplete="off" placeholder="아이디를 입력해주세요." name="loginId" type="text"></div>
-            <div>로그인 비밀번호 : <input autocomplete="off" placeholder="비밀번호 입력해주세요." name="loginPw" type="password"></div>
-            <div>로그인 비밀번호 확인 : <input autocomplete="off" placeholder="비밀번호 확인을 입력해주세요." name="loginPwConfirm" type="password"></div>
-            <div>이름 : <input autocomplete="off" placeholder="이름을 입력해주세요." name="name" type="text"></div>
-            <div>이메일 : <input autocomplete="off" placeholder="이메일을 입력해주세요." name="email" type="email"></div>
+            <div>로그인 아이디 : <input placeholder="아이디를 입력해주세요." name="loginId" type="text"></div>
+            <div>로그인 비밀번호 : <input placeholder="비밀번호 입력해주세요." name="loginPw" type="password"></div>
+            <div>로그인 비밀번호 확인 : <input placeholder="비밀번호 확인을 입력해주세요." name="loginPwConfirm" type="password"></div>
+            <div>이름 : <input placeholder="이름을 입력해주세요." name="name" type="text"></div>
+            <div>이메일 : <input placeholder="이메일을 입력해주세요." name="email" type="email"></div>
             <div class="btn-group">
                 <button type="submit">회원가입</button>
                 <button type="button">
