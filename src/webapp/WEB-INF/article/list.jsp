@@ -7,7 +7,8 @@
 <%
     Rq rq = new Rq(request, response);
     List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
-
+    int cPage = (int) rq.getAttr("page");
+    int totalPage = (int) rq.getAttr("totalPage");
 %>
 <!doctype html>
 <html lang="ko">
@@ -19,13 +20,18 @@
     <title>게시물 리스트</title>
 </head>
 <body>
-    <style>
+    <style type="text/css">
         body, ul, li {
             margin: 0;
         }
         .section {
             display: flex;
             justify-content: center;
+        }
+
+        .page > a.red {
+            color: red;
+
         }
     </style>
 
@@ -66,6 +72,11 @@
             </table>
             <div class="btn-group">
                 <a href="write">게시물 작성</a>
+            </div>
+            <div class="page"style="display:flex; justify-content: center; gap: 0 10px;">
+                <% for(int i = 1; i <= totalPage; i++) {%>
+                    <a class="<%= cPage == i ? "red" : "" %>" href="list?page=<%=i%>"><%=i%></a>
+                <%}%>
             </div>
         </div>
     </section>
