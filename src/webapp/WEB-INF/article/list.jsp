@@ -1,29 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!--Rq사용하기-->
-<%@ page import="sbs.jsp.board.Rq" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Map" %>
 
 <%
-    Rq rq = new Rq(request, response);
-    List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) rq.getAttr("articleListMap");
-    int cPage = (int) rq.getAttr("page");
-    int totalPage = (int) rq.getAttr("totalPage");
+    List<Map<String, Object>> articleListMap = (List<Map<String, Object>>) request.getAttribute("articleListMap");
+    int cPage = (int) request.getAttribute("page");
+    int totalPage = (int) request.getAttribute("totalPage");
 %>
 <!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>게시물 리스트</title>
-</head>
+
+<%@ include file="../part/head.jspf"%>
 <body>
-    <style type="text/css">
-        body, ul, li {
-            margin: 0;
-        }
+    <style >
         .section {
             display: flex;
             justify-content: center;
@@ -46,6 +36,7 @@
                     <col width="200">
                     <col width="200">
                     <col width="200">
+                    <col width="100">
                 </colgroup>
                 <thead>
                 <tr>
@@ -54,6 +45,7 @@
                     <th>수정날짜</th>
                     <th>제목</th>
                     <th>내용</th>
+                    <th>작성자</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -66,6 +58,7 @@
                         <a href="detail?id=<%= articleRow.get("id")%>"><%= articleRow.get("title")%></a>
                     </td>
                     <td><%= articleRow.get("content")%></td>
+                    <td><%= articleRow.get("writerName")%></td>
                 </tr>
                 <% } %>
                 </tbody>
@@ -99,5 +92,4 @@
             </div>
         </div>
     </section>
-</body>
-</html>
+<%@ include file="../part/foot.jspf"%>

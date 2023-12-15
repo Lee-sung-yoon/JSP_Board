@@ -1,36 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!--Rq사용하기-->
-<%@ page import="sbs.jsp.board.Rq" %>
 <%@ page import="java.util.Map" %>
 
 <%
-    Rq rq = new Rq(request, response);
-    Map<String, Object> articleRow = (Map<String, Object>) rq.getAttr("articleRow");
-
+    Map<String, Object> articleRow = (Map<String, Object>) request.getAttribute("articleRow");
 %>
-<!doctype html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>게시물 상세보기</title>
-</head>
-<body>
-    <style>
-        body, ul, li {
-            margin: 0;
-        }
-        .section {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
+
+<%@ include file="../part/head.jspf"%>
+<style>
+     .section {
+         display: flex;
+         justify-content: center;
+      }
+</style>
 
     <section class="section">
         <div class="con">
-            <h1>게시물 수정</h1>
+            <h1>게시물 상세보기</h1>
 
             <table border="1" style="border-collapse: collapse; text-align: center;">
                 <colgroup>
@@ -39,6 +25,7 @@
                     <col width="200">
                     <col width="200">
                     <col width="200">
+                    <col width="150">
                 </colgroup>
                 <thead>
                 <tr>
@@ -47,6 +34,7 @@
                     <th>수정날짜</th>
                     <th>제목</th>
                     <th>내용</th>
+                    <th>작성자</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -56,6 +44,7 @@
                         <td><%= articleRow.get("updateDate")%></td>
                         <td><%= articleRow.get("title")%></td>
                         <td><%= articleRow.get("content")%></td>
+                        <td><%= articleRow.get("writerName")%></td>
                     </tr>
                 </tbody>
             </table>
@@ -68,5 +57,5 @@
             </div>
         </div>
     </section>
-</body>
-</html>
+
+<%@ include file="../part/foot.jspf"%>
