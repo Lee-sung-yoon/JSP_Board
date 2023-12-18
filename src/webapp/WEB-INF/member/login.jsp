@@ -59,7 +59,7 @@ Rq rq = new Rq(request, response);
             <div class="btn-group">
                 <button type="submit">로그인</button>
                 <button type="button">
-                    <a href="/home/main">취소</a>
+                    <a href="/usr/article/list">취소</a>
                 </button>
             </div>
         </form>

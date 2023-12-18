@@ -40,7 +40,7 @@ public class UsrMemberDoLoginServlet extends HttpServlet {
                     </script>
                     """);
         }
-        
+
         if (((String) memberRow.get("loginPw")).equals(loginPw) == false) {
             rq.print("""
                     <script>
@@ -58,7 +58,7 @@ public class UsrMemberDoLoginServlet extends HttpServlet {
         rq.print("""
                     <script>
                         alert('로그인 되었습니다.')
-                        location.replace('/home/main');
+                        location.replace('/usr/home/main');
                     </script>
                     """);
 }

@@ -1,12 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.Map" %>
-
+<%@ page import="java.util.List" %>
 
 <%
 Map<String, Object> loginedMemberRow = (Map<String, Object>) request.getAttribute("loginedMemberRow");
 boolean isLogined = (boolean) request.getAttribute("isLogined");
 int loginedMemberId = (int) request.getAttribute("loginedMemberId");
-String loginedMemberName = (String) request.getAttribute("loginedMemberName");
 
 %>
 
@@ -51,7 +50,7 @@ String loginedMemberName = (String) request.getAttribute("loginedMemberName");
     <header class="top-bar">
         <% if (isLogined) { %>
         <div>
-            <%=loginedMemberName%> 회원님 환영합니다.
+            "<%=loginedMemberRow.get("name")%>" 회원님 환영합니다.
         </div>
         <% } %>
         <nav class="menu-box-1">
