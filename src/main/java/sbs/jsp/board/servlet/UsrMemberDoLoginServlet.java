@@ -53,12 +53,12 @@ public class UsrMemberDoLoginServlet extends HttpServlet {
         // 세션에 현재 로그인한 정보를 담기 위해서이다.
         HttpSession session = req.getSession();
         session.setAttribute("loginedMemberId", memberRow.get("id"));
-        session.setAttribute("loginedMemberName", memberRow.get("name"));
+//        session.setAttribute("loginedMemberName", memberRow.get("name"));
 
         rq.print("""
                     <script>
                         alert('로그인 되었습니다.')
-                        location.replace('/usr/home/main');
+                        location.replace('/home/main');
                     </script>
                     """);
 }
