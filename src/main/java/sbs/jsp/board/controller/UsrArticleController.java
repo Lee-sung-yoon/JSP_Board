@@ -25,7 +25,7 @@ public class UsrArticleController {
 
         int totalPage = articleService.getForPrintListTotalPage();
 
-        List<Map<String, Object>> articleRows = articleService.getForPrintListTotalRows(page);
+        List<Map<String, Object>> articleRows = articleService.getArticleRows(page);
 
         rq.setAttr("articleRows", articleRows);
         rq.setAttr("page", page);
