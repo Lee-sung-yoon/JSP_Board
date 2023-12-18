@@ -29,7 +29,7 @@ public class DispatcherServlet extends HttpServlet {
         // ex) /usr/article/list  --> [0]/[1]/[2]/[3]
 
         if (requestUriBits.length < 4) {
-            rq.appendBody("""
+            rq.print("""
                 <script>
                     alert('올바른 요청이 아닙니다.'); 
                     location.replace('/home/main'); 
@@ -44,6 +44,7 @@ public class DispatcherServlet extends HttpServlet {
 
         boolean isLogined = false;
         int loginedMemberId = -1;
+        String loginedMemberName = "";
         Map<String, Object> loginedMemberRow = null;
 
         if (session.getAttribute("loginedMemberId") != null) {
@@ -58,6 +59,7 @@ public class DispatcherServlet extends HttpServlet {
 
         rq.setAttr("isLogined", isLogined); //로그인 여부
         rq.setAttr("loginedMemberId", loginedMemberId);
+        rq.setAttr("loginedMemberName", loginedMemberName);
         rq.setAttr("loginedMemberRow", loginedMemberRow);
         // 모든 요청을 들어가기 전에 무조건 해야 하는 일
 

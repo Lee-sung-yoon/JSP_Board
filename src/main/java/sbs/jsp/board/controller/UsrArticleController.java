@@ -3,6 +3,7 @@ package sbs.jsp.board.controller;
 import jakarta.servlet.http.HttpSession;
 import sbs.jsp.board.Rq;
 import sbs.jsp.board.dto.Article;
+import sbs.jsp.board.dto.ResultData;
 import sbs.jsp.board.service.ArticleService;
 import sbs.jsp.board.util.MysqlUtil;
 import sbs.jsp.board.util.SecSql;
@@ -58,7 +59,7 @@ public class UsrArticleController {
         int id = rq.getIntParam("id", 0);
 
         if (id == 0) {
-            rq.appendBody("<script>alert('잘못된 요청입니다.'); history.back(); </script>");
+            rq.print("<script>alert('잘못된 요청입니다.'); history.back(); </script>");
             return;
         }
 
@@ -70,7 +71,7 @@ public class UsrArticleController {
         boolean articleIsExists = MysqlUtil.selectRowBooleanValue(sql);
 
         if (articleIsExists == false) {
-            rq.appendBody("<script>alert('해당 게시물은 없는 게시물입니다.'); history.back(); </script>");
+            rq.print("<script>alert('해당 게시물은 없는 게시물입니다.'); history.back(); </script>");
             return;
         }
 
@@ -99,58 +100,40 @@ public class UsrArticleController {
         String content = rq.getParam("content", "");
 
         if (title.length() == 0) {
-            rq.appendBody("""
-                    <script>
-                        alert('제목을 입력해주세요')
-                        history.back();
-                    </script>
-                    """);
+            rq.historyBack("제목을 입력해주세요");
+            return;
         }
 
         if (content.length() == 0) {
-            rq.appendBody("""
-                    <script>
-                        alert('내용을 입력해주세요')
-                        history.back();
-                    </script>
-                    """);
+            rq.historyBack("내용을 입력해주세요");
+            return;
         }
 
         HttpSession session = rq.getSession();
 
         if (session.getAttribute("loginedMemberId") == null) {
-            rq.appendBody("""
-                    <script>
-                        alert('로그인 후 이용해주세요.')
-                        location.replace('../member/login');
-                    </script>
-                    """);
+            rq.locationReplaces("로그인 후 이용해주세요.", "../member/login");
+            return;
         }
 
         int loginedMemberId = (int) session.getAttribute("loginedMemberId");
 
-        SecSql sql = new SecSql();
-        sql.append("INSERT INTO article");
-        sql.append("SET regDate = NOW()");
-        sql.append(", updateDate = NOW()");
-        sql.append(", title = ?", title);
-        sql.append(", content = ?", content);
-        sql.append(", memberId = ?", loginedMemberId);
+        ResultData writeRd = articleService.write(loginedMemberId, title, content);
 
-        int id = MysqlUtil.insert(sql);
-        rq.appendBody("""
-                    <script>
-                        alert('%d번의 글이 작성되었습니다.')
-                        location.replace('detail?id=%d');
-                    </script>
-                    """.formatted(id, id));
+        int id = (int) writeRd.getBody().get("id");
+
+        rq.locationReplaces("%d번의 글이 작성되었습니다.".formatted(id), "detail?id=%d".formatted(id));
+
+        System.out.println("성공 여부 : " + writeRd.getResultCode());
+        System.out.println("메세지 : " + writeRd.getMsg());
+
     }
 
     public void showModify() {
         int id = rq.getIntParam("id", 0);
 
         if (id == 0) {
-            rq.appendBody("""
+            rq.print("""
                     <script>
                         alert('잘못된 요청입니다.'); 
                         history.back(); 
@@ -177,7 +160,7 @@ public class UsrArticleController {
 
         int id = rq.getIntParam("id", 0);
         if (title.length() == 0) {
-            rq.appendBody("""
+            rq.print("""
                     <script>
                         alert('제목을 입력해주세요')
                         history.back();
@@ -186,7 +169,7 @@ public class UsrArticleController {
         }
 
         if (content.length() == 0) {
-            rq.appendBody("""
+            rq.print("""
                     <script>
                         alert('내용을 입력해주세요')
                         history.back();
@@ -203,7 +186,7 @@ public class UsrArticleController {
 
         MysqlUtil.update(sql);
 
-        rq.appendBody("""
+        rq.print("""
                     <script>
                         alert('%d번의 글이 수정되었습니다.')
                         location.replace('detail?id=%d');
@@ -215,7 +198,7 @@ public class UsrArticleController {
         int id = rq.getIntParam("id", 0);
 
         if (id == 0) {
-            rq.appendBody("<script>alert('잘못된 요청입니다.'); history.back(); </script>");
+            rq.print("<script>alert('잘못된 요청입니다.'); history.back(); </script>");
             return;
         }
 
@@ -227,7 +210,7 @@ public class UsrArticleController {
         boolean articleIsExists = MysqlUtil.selectRowBooleanValue(sql);
 
         if (articleIsExists == false) {
-            rq.appendBody("""
+            rq.print("""
             <script>
                 alert('해당 게시물은 없는 게시물입니다.'); 
                 location.replace('list'); 
@@ -243,7 +226,7 @@ public class UsrArticleController {
 
         MysqlUtil.delete(sql);
 
-        rq.appendBody("""
+        rq.print("""
                 <script>
                     alert('%d번 글이 삭제되었습니다.'); 
                     location.replace('list') 

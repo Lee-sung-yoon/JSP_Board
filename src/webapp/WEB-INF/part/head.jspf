@@ -6,6 +6,7 @@
 Map<String, Object> loginedMemberRow = (Map<String, Object>) request.getAttribute("loginedMemberRow");
 boolean isLogined = (boolean) request.getAttribute("isLogined");
 int loginedMemberId = (int) request.getAttribute("loginedMemberId");
+String loginedMemberName = (String) request.getAttribute("loginedMemberName");
 
 %>
 
@@ -50,7 +51,7 @@ int loginedMemberId = (int) request.getAttribute("loginedMemberId");
     <header class="top-bar">
         <% if (isLogined) { %>
         <div>
-            <%=loginedMemberId%> 회원님 환영합니다.
+            <%=loginedMemberName%> 회원님 환영합니다.
         </div>
         <% } %>
         <nav class="menu-box-1">

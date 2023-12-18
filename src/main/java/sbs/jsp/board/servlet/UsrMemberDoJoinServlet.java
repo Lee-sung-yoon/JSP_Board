@@ -33,7 +33,7 @@ import java.io.IOException;
                 boolean isJoinAvailableLoginId = MysqlUtil.selectRowIntValue(sql) == 0;
 
                 if (isJoinAvailableLoginId == false) {
-                    rq.appendBody("""
+                    rq.print("""
                             <script>
                                 alert('%s 중복 된 로그인 아이디입니다.')
                                 history.back();
@@ -50,7 +50,7 @@ import java.io.IOException;
                 boolean isJoinAvailableEmail = MysqlUtil.selectRowIntValue(sql) == 0;
 
                 if (isJoinAvailableEmail == false) {
-                    rq.appendBody("""
+                    rq.print("""
                             <script>
                                 alert('%s 중복 된 로그인 이메일입니다.')
                                 history.back();
@@ -68,7 +68,7 @@ import java.io.IOException;
                 sql.append(", email = ?", email);
 
                 int id = MysqlUtil.insert(sql);
-                rq.appendBody("""
+                rq.print("""
                             <script>
                                 alert('%d번의 회원이 생성되었습니다.')
                                 location.replace('/home/main');
