@@ -4,6 +4,7 @@ import sbs.jsp.board.dto.Article;
 import sbs.jsp.board.util.MysqlUtil;
 import sbs.jsp.board.util.SecSql;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -20,18 +21,23 @@ public class ArticleRepository {
     }
 
 
-    public List<Map<String, Object>> getArticleRows(int itemInAPage, int limitFrom) {
+    public List<Article> getForPrintArticles(int itemInAPage, int limitFrom) {
         SecSql sql = new SecSql();
-        sql.append("SELECT A.*, M.name AS writerName");
+        sql.append("SELECT A.*, M.name AS extra__writerName");
         sql.append("FROM article AS A");
         sql.append("INNER JOIN `member` AS M");
         sql.append("ON A.memberId = M.id");
         sql.append("ORDER BY id DESC");
         sql.append("LIMIT ?, ?", limitFrom, itemInAPage);
 
-        List<Map<String, Object>> articleRows = MysqlUtil.selectRows(sql);
+        List<Map<String, Object>> selectRows = MysqlUtil.selectRows(sql);
+        List<Article> articles = new ArrayList<>();
 
-        return articleRows;
+        for(Map<String, Object> selectRow: selectRows) {
+            articles.add(new Article(selectRow));
+        }
+
+        return articles;
     }
 
     public int write(int loginedMemberId, String title, String content) {

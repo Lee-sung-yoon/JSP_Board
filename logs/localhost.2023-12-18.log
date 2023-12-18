@@ -2452,3 +2452,731 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:1589)
+18-Dec-2023 23:30:48.842 SEVERE [http-nio-8081-exec-1] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [52] 행에서 오류가 발생했습니다.
+Type mismatch: cannot convert from element type Article to Map<String,Object>
+49:                 </tr>
+50:                 </thead>
+51:                 <tbody>
+52:                 <% for(Map<String, Object> article : articles) {%>
+53:                 <tr>
+54:                     <td><%= article.getId() %></td>
+55:                     <td><%= article.getRegDate() %></td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [54] 행에서 오류가 발생했습니다.
+The method getId() is undefined for the type Map<String,Object>
+51:                 <tbody>
+52:                 <% for(Map<String, Object> article : articles) {%>
+53:                 <tr>
+54:                     <td><%= article.getId() %></td>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [55] 행에서 오류가 발생했습니다.
+The method getRegDate() is undefined for the type Map<String,Object>
+52:                 <% for(Map<String, Object> article : articles) {%>
+53:                 <tr>
+54:                     <td><%= article.getId() %></td>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [56] 행에서 오류가 발생했습니다.
+The method getUpdateDate() is undefined for the type Map<String,Object>
+53:                 <tr>
+54:                     <td><%= article.getId() %></td>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+The method getId() is undefined for the type Map<String,Object>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+60:                     <td><%= article.getContent() %></td>
+61:                     <td><%= article.getExtra__writerName() %></td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+The method getTitle() is undefined for the type Map<String,Object>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+60:                     <td><%= article.getContent() %></td>
+61:                     <td><%= article.getExtra__writerName() %></td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [60] 행에서 오류가 발생했습니다.
+The method getContent() is undefined for the type Map<String,Object>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+60:                     <td><%= article.getContent() %></td>
+61:                     <td><%= article.getExtra__writerName() %></td>
+62:                 </tr>
+63:                 <% } %>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [61] 행에서 오류가 발생했습니다.
+The method getExtra__writerName() is undefined for the type Map<String,Object>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+60:                     <td><%= article.getContent() %></td>
+61:                     <td><%= article.getExtra__writerName() %></td>
+62:                 </tr>
+63:                 <% } %>
+64:                 </tbody>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.Rq.jsp(Rq.java:126)
+		at sbs.jsp.board.controller.UsrArticleController.showList(UsrArticleController.java:47)
+		at sbs.jsp.board.controller.UsrArticleController.performAction(UsrArticleController.java:25)
+		at sbs.jsp.board.servlet.DispatcherServlet.doGet(DispatcherServlet.java:56)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+18-Dec-2023 23:30:48.842 SEVERE [http-nio-8081-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로가 []인 컨텍스트의 서블릿 [sbs.jsp.board.servlet.DispatcherServlet]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.RuntimeException: org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [52] 행에서 오류가 발생했습니다.
+Type mismatch: cannot convert from element type Article to Map<String,Object>
+49:                 </tr>
+50:                 </thead>
+51:                 <tbody>
+52:                 <% for(Map<String, Object> article : articles) {%>
+53:                 <tr>
+54:                     <td><%= article.getId() %></td>
+55:                     <td><%= article.getRegDate() %></td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [54] 행에서 오류가 발생했습니다.
+The method getId() is undefined for the type Map<String,Object>
+51:                 <tbody>
+52:                 <% for(Map<String, Object> article : articles) {%>
+53:                 <tr>
+54:                     <td><%= article.getId() %></td>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [55] 행에서 오류가 발생했습니다.
+The method getRegDate() is undefined for the type Map<String,Object>
+52:                 <% for(Map<String, Object> article : articles) {%>
+53:                 <tr>
+54:                     <td><%= article.getId() %></td>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [56] 행에서 오류가 발생했습니다.
+The method getUpdateDate() is undefined for the type Map<String,Object>
+53:                 <tr>
+54:                     <td><%= article.getId() %></td>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+The method getId() is undefined for the type Map<String,Object>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+60:                     <td><%= article.getContent() %></td>
+61:                     <td><%= article.getExtra__writerName() %></td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+The method getTitle() is undefined for the type Map<String,Object>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+60:                     <td><%= article.getContent() %></td>
+61:                     <td><%= article.getExtra__writerName() %></td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [60] 행에서 오류가 발생했습니다.
+The method getContent() is undefined for the type Map<String,Object>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+60:                     <td><%= article.getContent() %></td>
+61:                     <td><%= article.getExtra__writerName() %></td>
+62:                 </tr>
+63:                 <% } %>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [61] 행에서 오류가 발생했습니다.
+The method getExtra__writerName() is undefined for the type Map<String,Object>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+60:                     <td><%= article.getContent() %></td>
+61:                     <td><%= article.getExtra__writerName() %></td>
+62:                 </tr>
+63:                 <% } %>
+64:                 </tbody>
+
+
+Stacktrace:
+		at sbs.jsp.board.Rq.jsp(Rq.java:128)
+		at sbs.jsp.board.controller.UsrArticleController.showList(UsrArticleController.java:47)
+		at sbs.jsp.board.controller.UsrArticleController.performAction(UsrArticleController.java:25)
+		at sbs.jsp.board.servlet.DispatcherServlet.doGet(DispatcherServlet.java:56)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+	Caused by: org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [52] 행에서 오류가 발생했습니다.
+Type mismatch: cannot convert from element type Article to Map<String,Object>
+49:                 </tr>
+50:                 </thead>
+51:                 <tbody>
+52:                 <% for(Map<String, Object> article : articles) {%>
+53:                 <tr>
+54:                     <td><%= article.getId() %></td>
+55:                     <td><%= article.getRegDate() %></td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [54] 행에서 오류가 발생했습니다.
+The method getId() is undefined for the type Map<String,Object>
+51:                 <tbody>
+52:                 <% for(Map<String, Object> article : articles) {%>
+53:                 <tr>
+54:                     <td><%= article.getId() %></td>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [55] 행에서 오류가 발생했습니다.
+The method getRegDate() is undefined for the type Map<String,Object>
+52:                 <% for(Map<String, Object> article : articles) {%>
+53:                 <tr>
+54:                     <td><%= article.getId() %></td>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [56] 행에서 오류가 발생했습니다.
+The method getUpdateDate() is undefined for the type Map<String,Object>
+53:                 <tr>
+54:                     <td><%= article.getId() %></td>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+The method getId() is undefined for the type Map<String,Object>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+60:                     <td><%= article.getContent() %></td>
+61:                     <td><%= article.getExtra__writerName() %></td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [58] 행에서 오류가 발생했습니다.
+The method getTitle() is undefined for the type Map<String,Object>
+55:                     <td><%= article.getRegDate() %></td>
+56:                     <td><%= article.getUpdateDate() %></td>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+60:                     <td><%= article.getContent() %></td>
+61:                     <td><%= article.getExtra__writerName() %></td>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [60] 행에서 오류가 발생했습니다.
+The method getContent() is undefined for the type Map<String,Object>
+57:                     <td>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+60:                     <td><%= article.getContent() %></td>
+61:                     <td><%= article.getExtra__writerName() %></td>
+62:                 </tr>
+63:                 <% } %>
+
+
+JSP 파일 [/WEB-INF/article/list.jsp]의 [61] 행에서 오류가 발생했습니다.
+The method getExtra__writerName() is undefined for the type Map<String,Object>
+58:                         <a href="detail?id=<%= article.getId()%>"><%= article.getTitle() %></a>
+59:                     </td>
+60:                     <td><%= article.getContent() %></td>
+61:                     <td><%= article.getExtra__writerName() %></td>
+62:                 </tr>
+63:                 <% } %>
+64:                 </tbody>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.Rq.jsp(Rq.java:126)
+		... 27 more
+18-Dec-2023 23:30:48.843 SEVERE [http-nio-8081-exec-5] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.Rq.jsp(Rq.java:126)
+		at sbs.jsp.board.controller.UsrArticleController.showList(UsrArticleController.java:47)
+		at sbs.jsp.board.controller.UsrArticleController.performAction(UsrArticleController.java:25)
+		at sbs.jsp.board.servlet.DispatcherServlet.doGet(DispatcherServlet.java:56)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+18-Dec-2023 23:30:48.843 SEVERE [http-nio-8081-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로가 []인 컨텍스트의 서블릿 [sbs.jsp.board.servlet.DispatcherServlet]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.RuntimeException: org.apache.jasper.JasperException: org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at sbs.jsp.board.Rq.jsp(Rq.java:128)
+		at sbs.jsp.board.controller.UsrArticleController.showList(UsrArticleController.java:47)
+		at sbs.jsp.board.controller.UsrArticleController.performAction(UsrArticleController.java:25)
+		at sbs.jsp.board.servlet.DispatcherServlet.doGet(DispatcherServlet.java:56)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+	Caused by: org.apache.jasper.JasperException: org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:578)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:422)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.Rq.jsp(Rq.java:126)
+		... 27 more
+	Caused by: org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:194)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		... 40 more
+	Caused by: java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		... 41 more
+18-Dec-2023 23:30:48.843 SEVERE [http-nio-8081-exec-4] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.Rq.jsp(Rq.java:126)
+		at sbs.jsp.board.controller.UsrArticleController.showList(UsrArticleController.java:47)
+		at sbs.jsp.board.controller.UsrArticleController.performAction(UsrArticleController.java:25)
+		at sbs.jsp.board.servlet.DispatcherServlet.doGet(DispatcherServlet.java:56)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+18-Dec-2023 23:30:48.843 SEVERE [http-nio-8081-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로가 []인 컨텍스트의 서블릿 [sbs.jsp.board.servlet.DispatcherServlet]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.RuntimeException: org.apache.jasper.JasperException: org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at sbs.jsp.board.Rq.jsp(Rq.java:128)
+		at sbs.jsp.board.controller.UsrArticleController.showList(UsrArticleController.java:47)
+		at sbs.jsp.board.controller.UsrArticleController.performAction(UsrArticleController.java:25)
+		at sbs.jsp.board.servlet.DispatcherServlet.doGet(DispatcherServlet.java:56)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+	Caused by: org.apache.jasper.JasperException: org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:578)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:422)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.Rq.jsp(Rq.java:126)
+		... 27 more
+	Caused by: org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:194)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		... 40 more
+	Caused by: java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		... 41 more
+18-Dec-2023 23:30:48.958 SEVERE [http-nio-8081-exec-8] org.apache.catalina.core.ApplicationDispatcher.invoke 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.Rq.jsp(Rq.java:126)
+		at sbs.jsp.board.controller.UsrArticleController.showList(UsrArticleController.java:47)
+		at sbs.jsp.board.controller.UsrArticleController.performAction(UsrArticleController.java:25)
+		at sbs.jsp.board.servlet.DispatcherServlet.doGet(DispatcherServlet.java:56)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+18-Dec-2023 23:30:48.958 SEVERE [http-nio-8081-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로가 []인 컨텍스트의 서블릿 [sbs.jsp.board.servlet.DispatcherServlet]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.lang.RuntimeException: org.apache.jasper.JasperException: org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at sbs.jsp.board.Rq.jsp(Rq.java:128)
+		at sbs.jsp.board.controller.UsrArticleController.showList(UsrArticleController.java:47)
+		at sbs.jsp.board.controller.UsrArticleController.performAction(UsrArticleController.java:25)
+		at sbs.jsp.board.servlet.DispatcherServlet.doGet(DispatcherServlet.java:56)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+	Caused by: org.apache.jasper.JasperException: org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:578)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:422)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at sbs.jsp.board.Rq.jsp(Rq.java:126)
+		... 27 more
+	Caused by: org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:194)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		... 40 more
+	Caused by: java.lang.ClassNotFoundException: org.apache.jsp.WEB_002dINF.article.list_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:151)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		... 41 more
+18-Dec-2023 23:32:38.169 SEVERE [http-nio-8081-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로가 []인 컨텍스트의 서블릿 [sbs.jsp.board.servlet.DispatcherServlet]을(를) 위한 Servlet.service() 호출이 예외를 발생시켰습니다.
+	java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '() FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id ORDER BY i...' at line 1
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+		at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+		at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+		at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+		at sbs.jsp.board.util.MysqlUtil.selectRows(MysqlUtil.java:102)
+		at sbs.jsp.board.repository.ArticleRepository.getForPrintArticles(ArticleRepository.java:33)
+		at sbs.jsp.board.service.ArticleService.getForPrintArticles(ArticleService.java:36)
+		at sbs.jsp.board.controller.UsrArticleController.showList(UsrArticleController.java:41)
+		at sbs.jsp.board.controller.UsrArticleController.performAction(UsrArticleController.java:25)
+		at sbs.jsp.board.servlet.DispatcherServlet.doGet(DispatcherServlet.java:56)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
