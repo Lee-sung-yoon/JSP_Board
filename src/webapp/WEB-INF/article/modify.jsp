@@ -20,7 +20,6 @@
             <h1>글 수정</h1>
             <form action="doModify" method="POST">
                 <input type="hidden" name="id" value="${param.id}">
-                <input type="hidden" name="redirectUri" value="../article/detail?id=[NEW_ID]">
                 <div>제목 : <input autocomplete="off" placeholder="제목을 입력해주세요." name="title" type="text" value="<%= article.getTitle()%>"></div>
                 <div>내용 : <textarea autocomplete="off" placeholder="내용을 입력해주세요." name="content" type="text"><%= article.getContent()%></textarea></div>
                 <div class="btn-group">
