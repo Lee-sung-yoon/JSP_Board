@@ -4,6 +4,7 @@ import jakarta.servlet.http.HttpSession;
 import sbs.jsp.board.Rq;
 import sbs.jsp.board.container.Container;
 import sbs.jsp.board.dto.Article;
+import sbs.jsp.board.dto.Member;
 import sbs.jsp.board.dto.ResultData;
 import sbs.jsp.board.service.ArticleService;
 import sbs.jsp.board.util.Ut;
@@ -85,16 +86,9 @@ public class UsrArticleController extends Controller {
             return;
         }
 
-        HttpSession session = rq.getSession();
+        Member loginedMember = rq.getSessionAttr("loginedMember");
 
-        if (session.getAttribute("loginedMemberId") == null) {
-            rq.replace("로그인 후 이용해주세요.", "../member/login");
-            return;
-        }
-
-        int loginedMemberId = (int) session.getAttribute("loginedMemberId");
-
-        ResultData writeRd = articleService.write(loginedMemberId, title, content);
+        ResultData writeRd = articleService.write(loginedMember, title, content);
         int id = (int) writeRd.getBody().get("id");
 
         redirectUri = redirectUri.replace("[NEW_ID]", id + "");
@@ -116,22 +110,15 @@ public class UsrArticleController extends Controller {
             return;
         }
 
-        HttpSession session = rq.getSession();
-
-        if (session.getAttribute("loginedMemberId") == null) {
-            rq.replace("로그인 후 이용해주세요.", "../member/login");
-            return;
-        }
-
-        int loginedMemberId = (int) session.getAttribute("loginedMemberId");
-
         Article article = articleService.getForPrintArticleById(id);
 
         if (article == null) {
             rq.historyBack(Ut.f("%d번 게시물이 존재하지 않습니다.", id));
         }
 
-        ResultData actorCanModifyRd = articleService.actorCanModify(loginedMemberId, article);
+        Member loginedMember = rq.getSessionAttr("loginedMember");
+
+        ResultData actorCanModifyRd = articleService.actorCanModify(loginedMember, article);
 
         if (actorCanModifyRd.isFail()) {
             rq.historyBack(actorCanModifyRd.getMsg());
@@ -166,16 +153,9 @@ public class UsrArticleController extends Controller {
 
         Article article = articleService.getForPrintArticleById(id);
 
-        HttpSession session = rq.getSession();
+        Member loginedMember = rq.getSessionAttr("loginedMember");
 
-        if (session.getAttribute("loginedMemberId") == null) {
-            rq.replace("로그인 후 이용해주세요.", "../member/login");
-            return;
-        }
-
-        int loginedMemberId = (int) session.getAttribute("loginedMemberId");
-
-        ResultData actorCanModifyRd = articleService.actorCanModify(loginedMemberId, article);
+        ResultData actorCanModifyRd = articleService.actorCanModify(loginedMember, article);
 
         if (actorCanModifyRd.isFail()) {
             rq.historyBack(actorCanModifyRd.getMsg());
@@ -198,16 +178,9 @@ public class UsrArticleController extends Controller {
 
         Article article = articleService.getForPrintArticleById(id);
 
-        HttpSession session = rq.getSession();
+        Member loginedMember = rq.getSessionAttr("loginedMember");
 
-        if (session.getAttribute("loginedMemberId") == null) {
-            rq.replace("로그인 후 이용해주세요.", "../member/login");
-            return;
-        }
-
-        int loginedMemberId = (int) session.getAttribute("loginedMemberId");
-
-        ResultData actorCanDeleteRd = articleService.actorCanDelete(loginedMemberId, article);
+        ResultData actorCanDeleteRd = articleService.actorCanDelete(loginedMember, article);
 
         if (actorCanDeleteRd.isFail()) {
             rq.historyBack(actorCanDeleteRd.getMsg());

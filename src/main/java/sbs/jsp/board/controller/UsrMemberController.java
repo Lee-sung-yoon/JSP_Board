@@ -56,7 +56,7 @@ public class UsrMemberController extends Controller {
 
         Member member = (Member) loginRd.getBody().get("member");
 
-        rq.setSessionAttr("loginedMemberId", member);
+        rq.setSessionAttr("loginedMember", member);
 
         rq.replace(loginRd.getMsg(), redirectUri);
     }

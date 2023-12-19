@@ -25,27 +25,14 @@ public class DispatcherServlet extends HttpServlet {
 
         Rq rq = new Rq(req, resp);
 
-        // 모든 요청을 들어가기 전에 무조건 해야 하는 일 시작
-        HttpSession session = req.getSession();
-
-        boolean isLogined = false;
-        int loginedMemberId = -1;
-        Map<String, Object> loginedMemberRow = null;
-
-        if (session.getAttribute("loginedMemberId") != null) {
-            loginedMemberId = (int) session.getAttribute("loginedMemberId");
-            isLogined = true;
-
-            SecSql sql = new SecSql();
-            sql.append("SELECT * FROM `member`");
-            sql.append("WHERE id = ?", loginedMemberId);
-            loginedMemberRow = MysqlUtil.selectRow(sql);
+        if (rq.isInvalid()) {
+            rq.println("올바른 요청이 아닙니다.");
+            return;
         }
 
-        rq.setAttr("isLogined", isLogined); //로그인 여부
-        rq.setAttr("loginedMemberId", loginedMemberId);
-        rq.setAttr("loginedMemberRow", loginedMemberRow);
-        // 모든 요청을 들어가기 전에 무조건 해야 하는 일 끝
+        if (runInterceptor(rq) == false) {
+            return;
+        }
 
         Controller controller = null;
 
@@ -64,6 +51,22 @@ public class DispatcherServlet extends HttpServlet {
             controller.performAction(rq);
             MysqlUtil.closeConnection();
         }
+    }
+
+    private boolean runInterceptor(Rq rq) {
+        if (Container.beforeActionInterceptor.runBeforeAction(rq) == false) {
+            return false;
+        }
+
+        if (Container.needLoginInterceptor.runBeforeAction(rq) == false) {
+            return false;
+        }
+
+        if (Container.needLogoutInterceptor.runBeforeAction(rq) == false) {
+            return false;
+        }
+
+        return true;
     }
 
     @Override
