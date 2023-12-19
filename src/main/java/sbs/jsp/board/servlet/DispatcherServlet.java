@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpSession;
 import sbs.jsp.board.Rq;
 import sbs.jsp.board.controller.UsrArticleController;
 import sbs.jsp.board.controller.UsrHomeController;
+import sbs.jsp.board.controller.UsrMemberController;
 import sbs.jsp.board.util.MysqlUtil;
 import sbs.jsp.board.util.SecSql;
 
@@ -19,11 +20,10 @@ import java.util.Map;
 public class DispatcherServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        MysqlUtil.setDBInfo("localhost", "qna", "qna1234", "jspboard");
-        MysqlUtil.setDevMode(true);
 
         Rq rq = new Rq(req, resp);
 
+        // 모든 요청을 들어가기 전에 무조건 해야 하는 일 시작
         HttpSession session = req.getSession();
 
         boolean isLogined = false;
@@ -43,17 +43,19 @@ public class DispatcherServlet extends HttpServlet {
         rq.setAttr("isLogined", isLogined); //로그인 여부
         rq.setAttr("loginedMemberId", loginedMemberId);
         rq.setAttr("loginedMemberRow", loginedMemberRow);
-        // 모든 요청을 들어가기 전에 무조건 해야 하는 일
+        // 모든 요청을 들어가기 전에 무조건 해야 하는 일 끝
 
         switch (rq.getControllerTypeName()) {
             case "usr"
                 -> {
                 UsrHomeController usrHomeController = new UsrHomeController();
                 UsrArticleController usrArticleController = new UsrArticleController();
+                UsrMemberController usrMemberController = new UsrMemberController();
 
                 switch (rq.getControllerName()) {
                     case "home" -> usrHomeController.performAction(rq);
                     case "article" -> usrArticleController.performAction(rq);
+                    case "member" -> usrMemberController.performAction(rq);
                 }
             }
         }

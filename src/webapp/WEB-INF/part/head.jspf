@@ -3,10 +3,9 @@
 <%@ page import="java.util.List" %>
 
 <%
-Map<String, Object> loginedMemberRow = (Map<String, Object>) request.getAttribute("loginedMemberRow");
-boolean isLogined = (boolean) request.getAttribute("isLogined");
-int loginedMemberId = (int) request.getAttribute("loginedMemberId");
-
+    Map<String, Object> loginedMemberRow = (Map<String, Object>) request.getAttribute("loginedMemberRow");
+    boolean isLogined = (boolean) request.getAttribute("isLogined");
+    int loginedMemberId = (int) request.getAttribute("loginedMemberId");
 %>
 
 <!doctype html>
