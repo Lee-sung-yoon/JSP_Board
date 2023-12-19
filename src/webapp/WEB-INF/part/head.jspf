@@ -51,7 +51,7 @@
             <nav class="menu-box-1 ml-auto">
                 <ul class="flex gap-x-[20px]">
                     <c:if test="${rq.logined}" >
-                        <div>
+                        <div class="!text-center">
                             "${rq.loginedMember.name}"회원님 환영합니다.
                         </div>
                     </c:if>
