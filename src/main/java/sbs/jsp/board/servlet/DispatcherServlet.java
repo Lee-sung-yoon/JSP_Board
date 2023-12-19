@@ -7,6 +7,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import sbs.jsp.board.Rq;
+import sbs.jsp.board.container.Container;
+import sbs.jsp.board.controller.Controller;
 import sbs.jsp.board.controller.UsrArticleController;
 import sbs.jsp.board.controller.UsrHomeController;
 import sbs.jsp.board.controller.UsrMemberController;
@@ -45,22 +47,23 @@ public class DispatcherServlet extends HttpServlet {
         rq.setAttr("loginedMemberRow", loginedMemberRow);
         // 모든 요청을 들어가기 전에 무조건 해야 하는 일 끝
 
+        Controller controller = null;
+
         switch (rq.getControllerTypeName()) {
             case "usr"
                 -> {
-                UsrHomeController usrHomeController = new UsrHomeController();
-                UsrArticleController usrArticleController = new UsrArticleController();
-                UsrMemberController usrMemberController = new UsrMemberController();
-
                 switch (rq.getControllerName()) {
-                    case "home" -> usrHomeController.performAction(rq);
-                    case "article" -> usrArticleController.performAction(rq);
-                    case "member" -> usrMemberController.performAction(rq);
+                    case "home" -> controller = Container.usrHomeController;
+                    case "article" -> controller = Container.usrArticleController;
+                    case "member" -> controller = Container.usrMemberController;
                 }
             }
         }
 
-        MysqlUtil.closeConnection();
+        if (controller != null) {
+            controller.performAction(rq);
+            MysqlUtil.closeConnection();
+        }
     }
 
     @Override

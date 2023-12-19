@@ -2,27 +2,25 @@ package sbs.jsp.board.controller;
 
 import jakarta.servlet.http.HttpSession;
 import sbs.jsp.board.Rq;
+import sbs.jsp.board.container.Container;
 import sbs.jsp.board.dto.Article;
 import sbs.jsp.board.dto.ResultData;
 import sbs.jsp.board.service.ArticleService;
-import sbs.jsp.board.util.MysqlUtil;
-import sbs.jsp.board.util.SecSql;
 import sbs.jsp.board.util.Ut;
 
 import java.util.List;
-import java.util.Map;
 
-public class UsrArticleController extends Controller{
+public class UsrArticleController extends Controller {
 
     private ArticleService articleService;
 
     public UsrArticleController() {
-        articleService = new ArticleService();
+        articleService = Container.articleService;
     }
 
     @Override
     public void performAction(Rq rq) {
-        switch (rq.getActionMethodName()){
+        switch (rq.getActionMethodName()) {
             case "list" -> showList(rq);
             case "detail" -> showDetail(rq);
             case "write" -> showWrite(rq);
@@ -99,7 +97,7 @@ public class UsrArticleController extends Controller{
         ResultData writeRd = articleService.write(loginedMemberId, title, content);
         int id = (int) writeRd.getBody().get("id");
 
-        redirectUri = redirectUri.replace("[NEW_ID]", id+"");
+        redirectUri = redirectUri.replace("[NEW_ID]", id + "");
 
 //        System.out.println("redirectUri = " + redirectUri);
 
