@@ -8,8 +8,7 @@
     int cPage = (int) request.getAttribute("page");
     int totalPage = (int) request.getAttribute("totalPage");
 %>
-<!doctype html>
-<html lang="ko">
+
 
 <%@ include file="../part/head.jspf"%>
 
