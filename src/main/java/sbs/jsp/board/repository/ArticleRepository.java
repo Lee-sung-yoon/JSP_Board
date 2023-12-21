@@ -86,4 +86,12 @@ public class ArticleRepository {
 
         MysqlUtil.delete(sql);
     }
+
+    public int getTotalItemsCount() {
+        SecSql sql = new SecSql();
+        sql.append("SELECT COUNT(*)");
+        sql.append("FROM article as A");
+
+        return MysqlUtil.selectRowIntValue(sql);
+    }
 }

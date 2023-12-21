@@ -32,12 +32,14 @@ public class UsrArticleController extends Controller {
     }
 
     public void showList(Rq rq) {
+        int totalItemsCount = articleService.getTotalItemsCount();
         int page = rq.getIntParam("page", 1);
 
         int totalPage = articleService.getForPrintListTotalPage();
 
         List<Article> articles = articleService.getForPrintArticles(page);
 
+        rq.setAttr("totalItemsCount", totalItemsCount);
         rq.setAttr("articles", articles);
         rq.setAttr("page", page);
         rq.setAttr("totalPage", totalPage);
