@@ -8,7 +8,7 @@
 
 <%@ include file="../part/head.jspf"%>
 
-<section class="article-detail-wrap">
+<section class="article-detail-wrap" xmlns:c="http://www.w3.org/1999/XSL/Transform">
     <div class="con mx-auto w-[1100px]">
         <h1 class="badge badge-neutral my-[10px]">게시물 상세보기</h1>
         <div class="article-detail-box border rounded-xl h-[600px] p-[20px] flex flex-col">
@@ -46,8 +46,12 @@
         </div>
         <div class="btn-group mt-[10px]">
             <a href="list" class="btn">리스트</a>
-            <a href="doDelete?id=${param.id}" class="btn btn-primary">삭제</a>
-            <a href="modify?id=${param.id}" class="btn btn-secondary">수정</a>
+            <c:if test="${article.extra__actorCanDelete}">
+                <a href="doDelete?id=${param.id}" class="btn btn-primary">삭제</a>
+            </c:if>
+            <c:if test="${article.extra__actorCanModify}">
+                <a href="modify?id=${param.id}" class="btn btn-secondary">수정</a>
+            </c:if>
         </div>
     </div>
 </section>
