@@ -4,11 +4,6 @@
 
 <%@ include file="../part/head.jspf"%>
 
-<style>
-        body, ul, li {
-            margin: 0;
-        }
-</style>
 
 <script>
     function LoginForm_submit(form) {
@@ -35,7 +30,30 @@
         form.submit();
         LoginForm__submitDone = true;
     }
+
 </script>
+
+<style>
+       .btn-group > button {
+                    width: calc(100% / 2 - 7px);
+                  }
+
+       .btn-group > .btn-login {
+                    background-color : oklch(0.4912 0.3096 275.75) !important;
+                  }
+
+       btn-group > .btn-login {
+                    background-color : oklab(0.44208 0.0279164 -0.277238) !important;
+                  }
+
+       .btn-group > .btn-cancel {
+                    background-color : oklch(0.6971 0.329 342.55) !important;
+                  }
+
+       .btn-group > .btn-cancel {
+                    background-color : oklab(0.62739 0.282473 -0.0887925) !important;
+                  }
+</style>
 
 <section class="member-login-wrap h-screen">
     <div class="con mx-auto w-[1100px] h-full flex items-center justify-center ">
@@ -46,23 +64,15 @@
                 </div>
             </div>
             <div class="login-box__body flex items-center justify-center flex-grow">
-                <form classs="w-full" action="doLogin" method="POST" onsubmit="LoginForm_submit(this); return false;">
+                <form action="doLogin" classs="w-full" method="POST" onsubmit="LoginForm_submit(this); return false;">
                     <div class="input-box flex flex-col items-center gap-y-3">
-                        <input placeholder="아이디" name="loginId" type="text" class="input input-bordered w-full "/>
-                        <input placeholder="비밀번호" name="loginPw" type="password" class="input input-bordered w-full "/>
+                        <input class="input input-bordered w-full " name="loginId" placeholder="아이디" type="text"/>
+                        <input class="input input-bordered w-full " name="loginPw" placeholder="비밀번호" type="password"/>
                     </div>
                     <div class="btn-group flex justify-center gap-x-3 mt-[10px]">
-                        <style>
-                  .btn-group > button {
-                    width: calc(100% / 2 - 7px);
-                  }
 
-                  .btn-group > button:hover {
-
-                  }
-                        </style>
-                        <button type="submit" class="btn btn-primary !text-[20px]">로그인</button>
-                        <button type="button" class="btn btn-secondary !text-[20px]">
+                        <button class="btn btn-primary btn-login !text-[20px]" type="submit">로그인</button>
+                        <button class="btn btn-secondary btn-cancel !text-[20px]" type="button">
                             <a href="/usr/article/list">취소</a>
                         </button>
                     </div>
