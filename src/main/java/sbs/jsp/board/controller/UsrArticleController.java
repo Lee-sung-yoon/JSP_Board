@@ -32,12 +32,13 @@ public class UsrArticleController extends Controller {
     }
 
     public void showList(Rq rq) {
-        int totalItemsCount = articleService.getTotalItemsCount();
+        String searchKeyword = rq.getParam("searchKeyword", "");
+        String searchKeywordTypeCode = rq.getParam("searchKeywordTypeCode", "title");
+        int totalItemsCount = articleService.getTotalItemsCount(searchKeywordTypeCode, searchKeyword);
         int page = rq.getIntParam("page", 1);
-
         int totalPage = articleService.getForPrintListTotalPage();
 
-        List<Article> articles = articleService.getForPrintArticles(page);
+        List<Article> articles = articleService.getForPrintArticles(page, searchKeywordTypeCode, searchKeyword);
 
         rq.setAttr("totalItemsCount", totalItemsCount);
         rq.setAttr("articles", articles);
